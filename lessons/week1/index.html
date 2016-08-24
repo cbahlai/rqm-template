@@ -1,1 +1,141 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RQM Handbook- Lesson 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christie Bahlai + MSL Team"/>
+    <!-- STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/rqm-template/assets/css/style.css">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/table.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body>
+  <!-- SIDE BAR NAVIGATION -->
+  	<aside>
+  		<div class="image">
+  			<img src="/rqm-template/assets/images/science-fox_violeta.svg">
+  		</div>
+  		<nav>
+  		  <a class="selected" href="#topics">Topics and resources</a>
+		  <a href="#exercises">Exercises</a>
+  		  <a href="#discussion">Discussion</a>
+  		  <a href="#navigate">Navigate</a>
+  		</nav>
+  	</aside>
+  <!-- BODY TEXT -->
+  	<article>
+      <div class="logo">
+        <a href="https://mozillascience.org" title="Mozilla Science Lab">
+          <img src="/rqm-template/assets/images/science-lab-logo.svg" />
+        </a>
+      </div>
+	<!-- TITLE -->
+      <h1>Reproducible Quantitative Methods</h1>
+      <h2>Instructor Guide, Lesson 1</h2>
+
+  <!-- META INFO -->
+      <div class="meta-information">
+
+        <p class="summary">
+           Introduction to reproducibility and open science frameworks
+        </p>
+
+      </div>
+
+      <div class="image">
+        <img src="/rqm-template/assets/images/octopode-bar.jpg" alt="yeah bar" height="90" width="770">
+      </div>
+	<!-- Topics -->
+		<h2 id="topics">Topics and Resources</h2>
+	<ol class="steps">
+        <!-- Topic 1 -->
+        <li>
+          <h1>Course syllabus and expectations </h1>
+          <p> <a href="syllabus.html">Here is a sample syllabus</a>. For structure and grading, design/tweak these per your institution’s requirements and schedule.</p>
+          <p>This is a project-pased learning course. The idea is to mentor students through a complete reproducible workflow, using a real dataset, with the intention of publishing their work as a manuscript, complete with data and code products. This project based approach is meant to stimulate the natural scientific curiosity of your students that they wouldn't get from using canned examples to complete the exercises, and to motivate them by offering authorship on conventional scientific products- all while giving them skills that will bring their work into compliance with federal funder guidelines (for example, <a href="http://www.nsf.gov/pubs/2015/nsf15052/nsf15052.pdf">NSF</a>). This means you'll need to start with some data. The good news is, unused (or under-used) data is everywhere.</p>
+          <p>&#8198 &#8226 See Simon Leather’s <a href="https://simonleather.wordpress.com/2016/06/28/data-i-am-never-going-to-publish-in-peer-reviewed-journals/">post on unused data that needs love</a></p>
+          <p>&#8198 &#8226 See <a href="data-guide.html">our guide</a> for finding a good project data set</p>
+          <p>&#8198 &#8226 You may also ask students if they have a data set, if there is any data that’s lying around unused in their lab, etc. You can ask them to do research on available data sets, and send them to you to evaluate if they’re appropriate for the class. However, you should have an appropriate data set identified by week 2 of the class.</p>
+        </li>
+        <!-- Topic 2 -->
+        <li>
+           <h1>Open science, open data, & reproducibility</h1>
+          <p>What is open science? What is open data? Use this time to talk, in very broad terms, what reproducibility and open science are, how they fit together, and why they're important. For this topic, consider asking the class to come up with a definition together, and then clarify or tweak. This is a good opportunity to gauge prior knowledge and attitudes. Here are some resources you can use to build your lesson, or assign your students to read and discuss.</p>
+          <p>&#8198 &#8226 <a href="http://www.openscience.org/blog/?p=269">What is open science?</a> from The OpenScience Project (2009)</p>
+          <p>&#8198 &#8226 <a href="http://blog.f1000research.com/2014/11/11/what-is-open-science/">What is open science?</a> from F1000Research (2014)</p>
+          <p>&#8198 &#8226 <a href="http://opendatahandbook.org/guide/en/what-is-open-data/">What is open data?</a></p>
+          <p>&#8198 &#8226 <a href="https://github.com/mozillascience/open-data-training/blob/master/Materials/Primers/P1_WhyOpenData.md">Open Data Primer 1</a></p>
+          <p>&#8198 &#8226 <a href="https://github.com/mozillascience/open-data-training/blob/master/Materials/Handouts/ODChallengesQI.md">Challenges and Responses to Open Data<a/></p>
+          <p>Every community inevidably produces its own terminology and jargon, and the open science and reproducible research community is no exception. Encourage your students to review the <a href="https://docs.google.com/document/d/1uXZzyXPHNcjCPiR5qkzEuB5u2PUIYQzq0mrG9BtD-Qo/edit#heading=h.tsneh02k2pc8">Open Research Glossary</a> - this is not only an excellent resource for definitions of terminology commonly used in open science, it's also an example of the community-driven products that are common in the open science community. Check out this <a href="https://figshare.com/articles/Open_Research_Glossary/1482094">article</a> describing how this glossary came about.</p>
+          </li>
+
+          <!-- Topic 3 -->
+          <li>
+             <h1>Rules and regulations from funders and institutions</h1>
+            <p>Here's a bit of the legal stuff. Introduce the students to the rules and regulations surrounding reproducibility, sharing and openness.</p>
+            <p>&#8198 &#8226 Data Management Plans- Data management plans are now a required part of most federal grant proposals. See the <a href=" http://datasharing.sparcopen.org/ ">SPARC resource</a> for Data Sharing Requirements by Federal Agency.</p>
+            <p>&#8198 &#8226 Enforcement- what sort of teeth do the rules and regulations around sharing and reproducibility have? See <a href="http://www.nsf.gov/pubs/2015/nsf15052/nsf15052.pdf">Today’s Data, Tomorrow’s Discoveries</a> NSF's public access plan. </p>
+            <p>&#8198 &#8226 Institutional Intellectual Property Policy- become familiar with your own! It might be hard to find. For example, Michigan State University’s copyright policies <a href="http://www.technologies.msu.edu/researchers/patent-copyright-policy/msu-copyright-policy"> are here.</a></p>
+
+            </li>
+        </ol>
+
+  <!-- EXERCISES -->
+  	<h2 id="exercises">Exercises</h2>
+      <ol>
+        <li><strong>Find your institutional IP policy, and discuss</strong></li>
+        <p>To assist students in locating this policy, provide keywords on the institutional website to search on including: </p>
+          “Intellectual property”<br>
+          “IP rights”<br>
+          “Copyright policy”<br>
+          “Data sharing policy”<br>
+          <p> Look on Office of Research or institutional Technology Transfer websites or for an institution-wide policy directory</p>
+          <p>Ask students to interpret the policy in terms of their work. Here are some questions to ask your students:</p>
+          <p><em>What are the rules or regulations around sharing your particular research products?<br>
+            Does the IP policy support the funding mandates?<br>
+            Who do you go to with questions about this policy?<br>
+            Is the policy different for students vs paid employees?</em></p>
+
+      </ol>
+
+  <!-- DISCUSSION -->
+  	<h2 id="discussion">Discussion</h2>
+
+  	<section class="track-details">
+      <section>
+        <h3>Openness and reproducibility in research</h3>
+        <p>
+        So why bother with reproducibility? What's the big deal about openness? How do they fit together? in this, the first class discussion, draw the students out to help understand their motivations for taking this class. Begin the discussion by watching the video together.
+        </p>
+          <h3>Video</h3>
+        <p>
+          <p>Rethinking Research Data (15:05)</p>
+          <iframe width="100%" height="425" src="https://www.youtube.com/watch?v=dXKbkpilQME" frameborder="0" allowfullscreen></iframe>
+        </p>
+          <h3>Questions</h3>
+        <p>
+
+            <p><em>Do you agree or disagree with Briney’s assertion that publication is advertising? What might make it “advertising” and not “science?” </em></p>
+            <p><em>What are your concerns or challenges to the concept of open data? Why do you support open data or open science?</em> Suggestion: break the students into pro and con groups, ask them to come up with three or four arguments for their position, and facilitate a short debate</p>
+
+        </p>
+      </section>
+
+  	</section>
+
+  <!-- Navigate -->
+  	<h2 id="navigate">Navigate</h2>
+
+              <p> <a href="/rqm-template/index.html">Home</a>  |  <a href="/rqm-template/lessons/week2/index.html">Next Lesson</a></p>
+
+  	</article>
+  </body>
+</html>
