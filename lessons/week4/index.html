@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RQM Handbook- Lesson 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christie Bahlai + MSL Team"/>
+    <!-- STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/rqm-template/assets/css/style.css">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/table.js" type="text/javascript" charset="utf-8"></script>
+  </head>
 
+  <body>
+  <!-- SIDE BAR NAVIGATION -->
+  	<aside>
+  		<div class="image">
+  			<img src="/rqm-template/assets/images/science-fox_violeta.svg">
+  		</div>
+  		<nav>
+  		  <a class="selected" href="#topics">Topics and resources</a>
+		  <a href="#exercises">Exercises</a>
+  		  <a href="#discussion">Discussion</a>
+  		  <a href="#navigate">Navigate</a>
+  		</nav>
+  	</aside>
+  <!-- BODY TEXT -->
+  	<article>
+      <div class="logo">
+        <a href="https://mozillascience.org" title="Mozilla Science Lab">
+          <img src="/rqm-template/assets/images/science-lab-logo.svg" />
+        </a>
+      </div>
+	<!-- TITLE -->
+      <h1>Reproducible Quantitative Methods</h1>
+      <h2>Instructor Guide, Lesson 4</h2>
+
+  <!-- META INFO -->
+      <div class="meta-information">
+
+        <p class="summary">
+           Cleaning up messy data / Identifying 'grey' data sources
+        </p>
+
+      </div>
+
+      <div class="image">
+        <img src="/rqm-template/assets/images/octopode-bar.jpg" alt="yeah bar" height="90" width="770">
+      </div>
+	<!-- Topics -->
+		<h2 id="topics">Topics and Resources</h2>
+	<ol class="steps">
+        <!-- Topic 1 -->
+        <li>
+          <h1>Introduction to data cleaning</h1>
+          <p> Open Refine is a great, graphical interface for data cleaning. Data Carpentry has a <a href="http://www.datacarpentry.org/OpenRefine-ecology-lesson/">great tutorial</a> which walks you through using OpenRefine on a messy dataset. We recommend working through this yourself in advance of the class, and consider demo-ing it on your data set when you present in class. Invite the students to explore OpenRefine on their own. </p>
+          <p>&#8198 &#8226 Hadley Wickham's <a href="http://vita.had.co.nz/papers/tidy-data.pdf">Tidy data</a> sets out the principles of "tidy" datasets and offers instruction for how to clean them in R. </p>
+          <p>&#8198 &#8226 <a href="https://github.com/Quartz/bad-data-guide">The Quartz guide to bad data</a> is a great resource for understanding the many, many ways data can go wrong, and offers readers suggestions for how to fix it</p>
+          <!-- PROTIP TEMPLATE -->
+              <section class="example">
+                <section class="title">
+                  <div class="image">
+                    <img src="/rqm-template/assets/images/noun_410782.svg" height="90" width="70" align="left">
+                  <br><h1>ProTip</h1>
+                  </div>
+                  <br>
+                  <p>A helpful hint from those that came before</p>
+                </section>
+                <section class="content">
+                  <p>
+                    <strong>yes, you may.</strong> The Quartz Guide is great because it clearly delineates where students will need to go back to the data creator or consult an expert. Sometimes, a student needs ‘permission’ to ask for help and this guide gives clear scenarios where they should.
+                  </p>
+                </section>
+              </section>
+        </li>
+        <!-- Topic 2 -->
+        <li>
+           <h1>Grey data liberation</h1>
+          <p>Data is all around us, and we, as humans, are generating it constantly as we go about our daily business. Sometimes you need to think about it a little harder before you realize it's actually data- for example, there's a lot of information being produced simply by <a href="http://rsos.royalsocietypublishing.org/content/3/6/150677">people uploading photos to the internet</a>. However, there's also a lot of classic research data (and literature) that never sees the light of day- the producers of the data, for whatever reason, have not published on it using traditional academic channels. One of the goals of this course is, in addition to teaching all the students the skills they need to make their own work reproducible, is to provide a mechanism for liberating grey data.</p>
+          </li>
+        </ol>
+
+  <!-- EXERCISES -->
+  	<h2 id="exercises">Exercises</h2>
+      <ol>
+        <li><strong>Personas</strong></li>
+        <p><a href="http://mozillascience.github.io/working-open-workshop/personas_pathways/">Do a “Persona” exercise</a> designed to help students understand goals and motivations of potential data donors. The persona is an imaginary data producer, and our goal is to get that person to share their data. Based on real-world observations and understandings of actual potential or current donors, sketch out this persona, and identify his or her motivations. The persona is used in business and software development to help designers understand and empathize with their users. </p>
+      </ol>
+
+  <!-- DISCUSSION -->
+  	<h2 id="discussion">Discussion</h2>
+
+  	<section class="track-details">
+      <section>
+        <h3>Grey data liberation</h3>
+        <p>  Refer back to Simon Leather’s <a href="https://simonleather.wordpress.com/2016/06/28/data-i-am-never-going-to-publish-in-peer-reviewed-journals/">post on unused data that needs love</a>.</p>
+          <h3>Reading</h3>
+        <p>
+          <p><a href="https://en.wikipedia.org/wiki/Grey_literature">Grey literature</a></p>
+          <iframe width="100%" height="425" src="https://www.youtube.com/embed/N2zK3sAtr-4" frameborder="0" allowfullscreen></iframe>
+        </p>
+          <h3>Questions</h3>
+        <p>
+
+            <p><em>Why is it desirable to see grey data published?</em></p>
+            <p><em>Why might a data producer not publish on the data they've produced?</em></p>
+            <p><em>What sort of questions can we ask of grey data? </em></p>
+            <p><em>How do we convince producers of grey data to work with us?</em></p>
+
+        </p>
+      </section>
+
+  	</section>
+
+  <!-- Navigate -->
+  	<h2 id="navigate">Navigate</h2>
+
+              <p><a href="/rqm-template/lessons/week3/index.html">Previous Lesson</a>  |  <a href="/rqm-template/index.html">Home</a>  |  <a href="/rqm-template/lessons/week5/index.html">Next Lesson</a></p>
+
+  	</article>
+  </body>
+</html>
