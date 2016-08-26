@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RQM Handbook- Lesson 9</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christie Bahlai + MSL Team"/>
+    <!-- STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/rqm-template/assets/css/style.css">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/table.js" type="text/javascript" charset="utf-8"></script>
+  </head>
 
+  <body>
+  <!-- SIDE BAR NAVIGATION -->
+  	<aside>
+  		<div class="image">
+  			<img src="/rqm-template/assets/images/science-fox_violeta.svg">
+  		</div>
+  		<nav>
+  		  <a class="selected" href="#topics">Topics and resources</a>
+		  <a href="#exercises">Exercises</a>
+  		  <a href="#discussion">Discussion</a>
+  		  <a href="#navigate">Navigate</a>
+  		</nav>
+  	</aside>
+  <!-- BODY TEXT -->
+  	<article>
+      <div class="logo">
+        <a href="https://mozillascience.org" title="Mozilla Science Lab">
+          <img src="/rqm-template/assets/images/science-lab-logo.svg" />
+        </a>
+      </div>
+	<!-- TITLE -->
+      <h1>Reproducible Quantitative Methods</h1>
+      <h2>Instructor Guide, Lesson 9
+  <!-- META INFO -->
+      <div class="meta-information">
+
+        <p class="summary">
+           Making better plots / Visualization for outreach and communication
+        </p>
+
+      </div>
+
+      <div class="image">
+        <img src="/rqm-template/assets/images/octopode-bar.jpg" alt="yeah bar" height="90" width="770">
+      </div>
+	<!-- Topics -->
+		<h2 id="topics">Topics and Resources</h2>
+	<ol class="steps">
+        <!-- Topic 1 -->
+        <li>
+          <h1>Plotting in R </h1>
+          <p>There are several ways you can approach plotting lessons with your students, but we suggest taking your target dataset and plotting it with your students in a variety of ways- scatter plots, bar graphs, etc. We encourage you to use <a href="http://www.cookbook-r.com/Graphs/">ggplot2</a>, but there are <a href="http://shinyapps.org/apps/RGraphCompendium/index.php">some inspiring resources</a> written with base R too. The way you do this will depend somewhat on the form your data takes- be sure to take inspiration from the conventions of data presentation in your field. Live code plots of the same data in a few different ways. Ask your students to interpret the graph at each step, and talk about the advantages and disadvantages of presenting the data each way.</p>
+          <!-- PROTIP TEMPLATE -->
+              <section class="example">
+                <section class="title">
+                  <div class="image">
+                    <img src="/rqm-template/assets/images/noun_410782.svg" height="90" width="70" align="left">
+                  <br><h1>ProTip</h1>
+                  </div>
+                  <br>
+                  <p>A helpful hint from those that came before</p>
+                </section>
+                <section class="content">
+                  <p>
+                    <strong>Keep it real</strong> Students find it very rewarding to produce "real" journal quality figures right from their R scripts. If time permits, show them how they can create <a href="http://myrcodes.blogspot.com/2014/10/arranging-layout-of-lattice-graphs.html">multi-panel figures</a> or <a href="http://docs.ggplot2.org/0.9.3/annotate.html">add annotations</a> to graphs- these often trip students up when working on projects solo.
+                  </p>
+                </section>
+              </section>
+        </li>
+        <!-- Topic 2 -->
+        <li>
+          <h1>Visual communication with data</h1>
+          <p>This is a great opportunity to talk to students about accessibility, communication and openness in science. Here’s a fascinating blog post about <a href="https://blog.graphiq.com/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283#.52v9xl5yi">color palettes</a> touching on many of these issues. </p>
+        </li>
+
+
+      </ol>
+
+  <!-- EXERCISES -->
+  	<h2 id="exercises">Exercises</h2>
+      <ol>
+        <li><strong>Making figures</strong></li>
+        <p>Work through creating figures with your students, based on their project data. Think about things like color palettes, and what that means for accessibility.</p>
+
+      </ol>
+
+  <!-- DISCUSSION -->
+  	<h2 id="discussion">Discussion</h2>
+
+  	<section class="track-details">
+      <section>
+        <h3>Visualization for communication</h3>
+        <p>For this discussion, there's a lot of material you can potentially present to your students. Conceptually, this is pretty open ended, but we want students to leave with an idea of why they should put a little bit more thought into graphng their data. Two readings we like are:</p>
+        <p>&#8198 &#8226 <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833">Ten simple rules for better figures</a></p>
+        <p>&#8198 &#8226 <a href="https://blog.graphiq.com/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283#.52v9xl5yi">Finding the Right Color Palettes for Data Visualizations</a></p>
+        <h3>Video</h3>
+      <p>
+        <p>TEDxWaterloo - Miriah Meyer - Information Visualization for Scientific Discovery (12:26)</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Sua0xDCf8MA" frameborder="0" allowfullscreen></iframe>
+      </p>
+        <h3>Questions</h3>
+      <p>
+          <p><em>Why is visualization important?</em></p>
+          <p><em>How should we visualize our project data?</em></p>
+
+
+      </p>
+      </section>
+
+  	</section>
+
+  <!-- Navigate -->
+  	<h2 id="navigate">Navigate</h2>
+
+              <p><a href="/rqm-template/lessons/week8/index.html">Previous Lesson</a>  |  <a href="/rqm-template/index.html">Home</a>  |  <a href="/rqm-template/lessons/week10/index.html">Next Lesson</a></p>
+
+  	</article>
+  </body>
+</html>
