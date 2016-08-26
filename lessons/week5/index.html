@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RQM Handbook- Lesson 5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christie Bahlai + MSL Team"/>
+    <!-- STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/rqm-template/assets/css/style.css">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/table.js" type="text/javascript" charset="utf-8"></script>
+  </head>
 
+  <body>
+  <!-- SIDE BAR NAVIGATION -->
+  	<aside>
+  		<div class="image">
+  			<img src="/rqm-template/assets/images/science-fox_violeta.svg">
+  		</div>
+  		<nav>
+  		  <a class="selected" href="#topics">Topics and resources</a>
+		  <a href="#exercises">Exercises</a>
+  		  <a href="#discussion">Discussion</a>
+  		  <a href="#navigate">Navigate</a>
+  		</nav>
+  	</aside>
+  <!-- BODY TEXT -->
+  	<article>
+      <div class="logo">
+        <a href="https://mozillascience.org" title="Mozilla Science Lab">
+          <img src="/rqm-template/assets/images/science-lab-logo.svg" />
+        </a>
+      </div>
+	<!-- TITLE -->
+      <h1>Reproducible Quantitative Methods</h1>
+      <h2>Instructor Guide, Lesson 5</h2>
+
+  <!-- META INFO -->
+      <div class="meta-information">
+
+        <p class="summary">
+           Intro to scripting in R/ Version control in R with Github
+        </p>
+
+      </div>
+
+      <div class="image">
+        <img src="/rqm-template/assets/images/octopode-bar.jpg" alt="yeah bar" height="90" width="770">
+      </div>
+	<!-- Topics -->
+		<h2 id="topics">Topics and Resources</h2>
+	<ol class="steps">
+        <!-- Topic 1 -->
+        <li>
+          <h1>Introduction to R </h1>
+          <p> Start by working with your students to import data into R Studio. Show the students how to do this by live-coding. For reproducibility, it’s best that you’re downloading the data directly from the web, so that anyone with a web connection can run your analyses using your script, without having to worry about pointing the code to a file they’ve downloaded somewhere on their computer. For this reason, a good way to prepare for this lesson is by uploading the course data to <a href="https://figshare.com/">figshare</a> or some other web based data repository. Often, students find simply getting the data IN to R is the hardest part, so once everyone has this working, make a big deal of it!</p>
+          <!-- PROTIP TEMPLATE -->
+              <section class="example">
+                <section class="title">
+                  <div class="image">
+                    <img src="/rqm-template/assets/images/noun_410782.svg" height="90" width="70" align="left">
+                  <br><h1>ProTip</h1>
+                  </div>
+                  <br>
+                  <p>A helpful hint from those that came before</p>
+                </section>
+                <section class="content">
+                  <p>
+                    <strong>Liven it up</strong> Live coding is a <a href="http://software-carpentry.org/blog/2016/04/tips-tricks-live-coding.html">teaching technique</a> that is exactly what it sounds like- you code directly in front of your students. This is a very good technique to use with novice coders because it humanizes the process - you don’t ‘just’ do anything, you have to show all the steps. It slows you down, it shows you making mistakes, it gives students an opportunity to suggest next steps. We recommend using this approach for the majority of your lessons involving coding.
+                  </p>
+                </section>
+              </section>
+
+
+        </li>
+        <!-- Topic 2 -->
+        <li>
+           <h1>Data Cleaning in R</h1>
+           <p>Once you have your data into R, the first thing you're going to want to do is make sure it's clean and behaving as you'd expect it to. For the issues with your data that you identified last week, script ways to correct them using R. What you do here is highly dependent on the issues with your data, but the idea here is to show the students that you can correct most issues you’d correct with OpenRefine in a scripted, reproducible way- directly correcting errors from the original data source. Lots of opportunities to use gsub to correct typos, etc. Here’s <a href="https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf">a resource</a> on the variety of things you can do this way. Here’s <a href="https://speakerdeck.com/jennybc/ubc-stat545-2015-cm103-data-cleaning-via-gapminder">some inspiration</a>. Scripted data cleaning: it CAN be done!! </p>
+           <!-- PROTIP TEMPLATE -->
+               <section class="example">
+                 <section class="title">
+                   <div class="image">
+                     <img src="/rqm-template/assets/images/noun_410782.svg" height="90" width="70" align="left">
+                   <br><h1>ProTip</h1>
+                   </div>
+                   <br>
+                   <p>A helpful hint from those that came before</p>
+                 </section>
+                 <section class="content">
+                   <p>
+                     <strong>Motivation in the script</strong> Students may be hesitant to take this approach with ‘one-off’ data, and that’s understandable, and that’s why it’s up to you to show them key places where this is important- for example, if you’re downloading weather station data directly for an analysis- these files are typically continuously updated, and the same things will need to be corrected every time this data is downloaded.
+                   </p>
+                 </section>
+               </section>
+          </li>
+          <!-- Topic 3 -->
+          <li>
+            <h1>Version Control</h1>
+                    <p>Finally, when you're setting up R Studio, you're going to want to make sure that all students are on board with version control. An easy way to do version control with Github is through the R Studio interface. <a href="http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/">Here are some tips for setting that up.</a>  </p>
+          </li>
+        </ol>
+
+  <!-- EXERCISES -->
+  	<h2 id="exercises">Exercises</h2>
+      <ol>
+        <li><strong>Github and R set-up</strong></li>
+        <p>Follow the tutorial linked above to set up github in R Studio on all students’ computers. Have students all attempt to create a project using version control through R. You *will* hit bugs. </p>
+        <!-- PROTIP TEMPLATE -->
+            <section class="example">
+              <section class="title">
+                <div class="image">
+                  <img src="/rqm-template/assets/images/noun_410782.svg" height="90" width="70" align="left">
+                <br><h1>ProTip</h1>
+                </div>
+                <br>
+                <p>A helpful hint from those that came before</p>
+              </section>
+              <section class="content">
+                <p>
+                  <strong>It's not a bug, it's a feature.</strong> Believe it on not, bugs help students learn about problem solving in computational environments. Support them through the debugging, but let them lead as much as possible. Common problems include: firewall issues, O/S differences and git config problems, git files installing in surprising places.
+                </p>
+              </section>
+            </section>
+      </ol>
+
+  <!-- DISCUSSION -->
+  	<h2 id="discussion">Discussion</h2>
+
+  	<section class="track-details">
+      <section>
+        <h3>Reproducibility and replication</h3>
+        <p>
+          What makes a scientific experiment repeatable? Repoducible? Replicable? Explore these resources with your students:
+          <p>&#8198 &#8226 <a href="http://www.theguardian.com/science/head-quarters/2015/oct/16/roadblocks-to-successful-scientific-replications-materials-sharing-copyright">Replication frustration: what stops experiments being reliably repeated?</a> -NB: Although this article presents some really interesting results of a cool project , the article itself uses the terms reproducibility and replication interchangeably. WE DO NOT AGREE WITH THIS! See below article.</p>
+          <p>&#8198 &#8226 <a href="http://jblevins.org/log/rep">Reproducibility vs Replication</a> Note: The definitions here talk about people going out and replicating and reproducing where we are more interested in the ability to replicate and reproduce.</p>
+
+        </p>
+          <h3>Video</h3>
+        <p>
+          <p>Scripts for Reproducible Research in R (R Tutorial 1.9) (6:21)</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qqz_D1vzS5M" frameborder="0" allowfullscreen></iframe>
+        </p>
+          <h3>Questions</h3>
+        <p>
+
+            <p><em>Why do we care so much about reproducibility?</em></p>
+            <p><em>How does scripting analysis improve reproducibility?</em></p>
+
+
+        </p>
+      </section>
+
+  	</section>
+
+  <!-- Navigate -->
+  	<h2 id="navigate">Navigate</h2>
+
+              <p><a href="/rqm-template/lessons/week4/index.html">Previous Lesson</a>  |  <a href="/rqm-template/index.html">Home</a>  |  <a href="/rqm-template/lessons/week6/index.html">Next Lesson</a></p>
+
+  	</article>
+  </body>
+</html>
