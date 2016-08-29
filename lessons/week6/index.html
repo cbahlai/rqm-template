@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RQM Handbook- Lesson 6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christie Bahlai + MSL Team"/>
+    <!-- STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/rqm-template/assets/css/style.css">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/rqm-template/assets/javascript/table.js" type="text/javascript" charset="utf-8"></script>
+  </head>
 
+  <body>
+  <!-- SIDE BAR NAVIGATION -->
+  	<aside>
+  		<div class="image">
+  			<img src="/rqm-template/assets/images/science-fox_violeta.svg">
+  		</div>
+  		<nav>
+  		  <a class="selected" href="#topics">Topics and resources</a>
+		  <a href="#exercises">Exercises</a>
+  		  <a href="#discussion">Discussion</a>
+  		  <a href="#navigate">Navigate</a>
+  		</nav>
+  	</aside>
+  <!-- BODY TEXT -->
+  	<article>
+      <div class="logo">
+        <a href="https://mozillascience.org" title="Mozilla Science Lab">
+          <img src="/rqm-template/assets/images/science-lab-logo.svg" />
+        </a>
+      </div>
+	<!-- TITLE -->
+      <h1>Reproducible Quantitative Methods</h1>
+      <h2>Instructor Guide, Lesson 6</h2>
+
+  <!-- META INFO -->
+      <div class="meta-information">
+
+        <p class="summary">
+           Programming in R / Licensing data and software for reuse
+        </p>
+
+      </div>
+
+      <div class="image">
+        <img src="/rqm-template/assets/images/octopode-bar.jpg" alt="yeah bar" height="90" width="770">
+      </div>
+	<!-- Topics -->
+		<h2 id="topics">Topics and Resources</h2>
+	<ol class="steps">
+        <!-- Topic 1 -->
+        <li>
+          <h1>R Review</h1>
+          <p> Review last week. Seriously, go over everything you did last week. Remind students what each line of code does. Remember, they’re new to this and frequent reviews and reminders are important!</p>
+        </li>
+        <!-- Topic 2 -->
+        <li>
+           <h1>The basics of programming in R</h1>
+          <p>These three concepts-- conditionals, loops, and functions-- are essentially the fundamentals of any programming approach.</p>
+          <p>&#8198 &#8226 <strong>Conditional-</strong> Working Definition: A logical statement that allows a computer to follow a different set of instructions depending on whether a condition is true or false (true/false values are known as a boolean values).<br>
+            Examples:<br>
+            https://en.wikibooks.org/wiki/R_Programming/Control_Structures<br>
+            https://www.youtube.com/watch?v=qvSKipqzg3U <br>
+            http://www.dummies.com/how-to/content/how-to-use-if-statements-in-r.html  </p>
+          <p>&#8198 &#8226 <strong>Loop-</strong> Working Definition: A set of rules or steps that are repeated over and over until a certain condition is reached. This condition (another true/false, or boolean) is evaluated each time the loop runs to determine if the loop should keep going. Loops help you avoid repeating lines of code and add tremendous efficiency to your program. <br>
+          Example:<br>
+          http://paleocave.sciencesortof.com/2013/03/writing-a-for-loop-in-r/  </p>
+          <p>&#8198 &#8226 <strong>Function-</strong> Working Definition: A discrete reusable chunk of code that can be called to perform a specific task.<br>
+            Example:<br>
+          http://nicercode.github.io/guides/functions/ </p>
+          <p>If you don’t use many functions in your own work, consult <a href="http://www.statmethods.net/management/userfunctions.html">Quick-R</a>.Look for problems within your dataset that can use any of these approaches, but it works to combine them as well.</p>
+          <p> Example: if you have to make a calculation that requires a conditional or iterating through a loop, write this within a function, and experiment with applying the function you wrote to multiple data objects. Here is sample code from the first iteration of the course that uses a function to replace missing values with estimates:</p>
+          <p><img src="/rqm-template/week6/samplecode.jpg" /></p>
+
+
+          </li>
+        </ol>
+
+  <!-- EXERCISES -->
+  	<h2 id="exercises">Exercises</h2>
+      <ol>
+        <li><strong>Loops, Conditionals and functions</strong></li>
+        <p>Let students suggest ideas about how to approach data processing using these methods, and nudge them in directions you’d like.  </p>
+        <!-- PROTIP TEMPLATE -->
+            <section class="example">
+              <section class="title">
+                <div class="image">
+                  <img src="/rqm-template/assets/images/noun_410782.svg" height="90" width="70" align="left">
+                <br><h1>ProTip(s)</h1>
+                </div>
+                <br>
+                <p>We've got lots of helpful hints for this section</p>
+              </section>
+              <section class="content">
+                <p>
+                  <strong>Plot early and plot often!</strong> Encourage students to plot data (just simple x-y scatter plots using base R will often do the trick- check for things like impossible values, strange relationships between variables) to ensure the data going into, and coming out of functions is following expected patterns.
+                </p>
+                <p>
+                  <strong>Helpful commentary.</strong> As you’re explaining analyses and live coding, type what you’re saying up as comments in your script file. This will help both you and your students remember what you did and why. Too many comments are better than too few!
+                </p>
+                <p>
+                  <strong>Make it pretty.</strong> <a href="https://stackoverflow.com/questions/15703553/auto-format-r-code-in-rstudio">Autoformat</a> your code in R Studio to make it easier to read and debug - the command is (cmd + l in Mac or ctrl + l  or Windows)
+                </p>
+                <p>
+                  <strong>Learn from your mistakes.</strong> Learning to use the R help and look up error messages is more useful than learning the syntax or commands for any specific package
+                </p>
+              </section>
+            </section>
+
+      </ol>
+
+  <!-- DISCUSSION -->
+  	<h2 id="discussion">Discussion</h2>
+
+  	<section class="track-details">
+      <section>
+        <h3>Licensing</h3>
+              <p> How do data and content licenses differ? What do you need to keep in mind when assigning a license more restrictive than CC-0 to your work? Talk about what happens if you are integrating multiple data sets and one data set is set as non-commercial while the other is only set as share-and-share alike.Think back to the Intellectual Property Policy exercise and revisit what licenses you may or may not be allowed to apply to your work.</p>
+
+          <h3>Readings</h3>
+        <p>
+          <p><a href="https://creativecommons.org/licenses/">About Creative Commons Licences</a> and <a href="http://www.ands.org.au/working-with-data/enabling-data-reuse/licensing-for-reuse">Licensing for data reuse</a></p>
+          </p>
+          <h3>Questions</h3>
+        <p>
+
+            <p><em>How do data and content licenses differ? </em></p>
+            <p><em>What is license stacking and what do you need to keep in mind when assigning a license to your work?</em></p>
+            <p><em>What are some things you’d want to consider when selecting a data repository? </em></p>
+
+        </p>
+      </section>
+
+  	</section>
+
+  <!-- Navigate -->
+  	<h2 id="navigate">Navigate</h2>
+
+              <p><a href="/rqm-template/lessons/week5/index.html">Previous Lesson</a>  |  <a href="/rqm-template/index.html">Home</a>  |  <a href="/rqm-template/lessons/week7/index.html">Next Lesson</a></p>
+
+  	</article>
+  </body>
+</html>
