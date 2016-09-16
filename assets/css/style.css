@@ -104,10 +104,10 @@ article {
 }
 .example {
   display: flex;
-  margin: 35px 0 0px 0;
+  margin: 35px 0 40px 0;
   background: #cfd2e7;
   color: #934e9d;
-  padding: 30px 22px;
+  padding: 30px 35px;
 }
 .example .title {
   flex: 1;
@@ -127,7 +127,7 @@ article {
   flex: 2;
   color: inherit;
   position: relative;
-  padding-left: 20px;
+  padding-left: 22px;
 }
 .example .content:after {
   content: "";
@@ -241,7 +241,7 @@ nav a:hover {
 }
 nav a:after {
   content: "";
-  background: url(../assets/images/nav-selected-indicator_violeta.svg);
+  background: url(../images/nav-selected-indicator_violeta.svg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
