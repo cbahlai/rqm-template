@@ -104,14 +104,15 @@ article {
 }
 .example {
   display: flex;
-  margin: 35px 0 40px 0;
+  margin: 35px 0 0px 0;
   background: #cfd2e7;
   color: #934e9d;
-  padding: 30px 35px;
+  padding: 30px 22px;
 }
 .example .title {
   flex: 1;
   color: inherit;
+  padding-right: 20px;
 }
 .example .title h1 {
   width: 100%;
@@ -126,7 +127,7 @@ article {
   flex: 2;
   color: inherit;
   position: relative;
-  padding-left: 22px;
+  padding-left: 20px;
 }
 .example .content:after {
   content: "";
@@ -240,7 +241,7 @@ nav a:hover {
 }
 nav a:after {
   content: "";
-  background: url(../images/nav-selected-indicator_violeta.svg);
+  background: url(../assets/images/nav-selected-indicator_violeta.svg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -448,8 +449,3 @@ table.altrowstable td {
 .evenrowcolor {
   background-color: #cfd2e7;
 }
-
-
-
-
-

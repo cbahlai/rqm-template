@@ -137,14 +137,15 @@ article {
 
 .example {
   display: flex;
-  margin: 35px 0 40px 0;
+  margin: 35px 0 0px 0;
   background: @primary-lightest;
   color: @primary-darkest;
-  padding: 30px 35px;
+  padding: 30px 22px;
 
   .title {
     flex: 1;
     color: inherit;
+    padding-right: 20px; 
 
     h1 {
       width: 100%;
@@ -161,7 +162,7 @@ article {
     flex: 2;
     color: inherit;
     position: relative;
-    padding-left: 22px;
+    padding-left: 20px;
 
     &:after {
       content: "";
@@ -183,6 +184,8 @@ article {
   }
 
 }
+
+
 
 // Summary, audience and duration
 .meta-information {
