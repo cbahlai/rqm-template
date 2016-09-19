@@ -112,6 +112,7 @@ article {
 .example .title {
   flex: 1;
   color: inherit;
+  padding-right: 20px;
 }
 .example .title h1 {
   width: 100%;
@@ -448,8 +449,3 @@ table.altrowstable td {
 .evenrowcolor {
   background-color: #cfd2e7;
 }
-
-
-
-
-
